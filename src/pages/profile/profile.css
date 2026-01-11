@@ -1,0 +1,19 @@
+#outer-profile{
+    display: flex;
+    justify-content: center;
+    border: 1px green solid;
+}
+
+#inner-profile{
+    border: 1px red solid;
+    padding: 4vh;
+    width: 50%;
+}
+
+#container-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px blue solid;
+    padding: 10vh;
+}

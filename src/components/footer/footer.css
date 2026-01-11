@@ -1,0 +1,28 @@
+#footer-outer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px;
+    background-color: #000000;
+    padding: 0px;
+    z-index: 100;
+}
+
+#footer-inner{
+    border: 1px;
+    padding: 18px;
+    width: 100%;
+}
+
+#footer-container{
+    display: flex;
+    justify-content: center;
+    border: 1px;
+    padding: 0px;
+    color: #fff;
+}
