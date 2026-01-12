@@ -8,10 +8,16 @@ const Profile = () => {
       <div id="outer-profile">
         <div id="inner-profile">
           <div id="container-profile">
-          
+            <div id="left-profile">
+              
+            </div>
+            <div id="right-profile">
+
+            </div>
           </div>
         </div>
       </div>
+
     </>
   );
 };

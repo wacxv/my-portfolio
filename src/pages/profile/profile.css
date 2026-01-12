@@ -6,14 +6,26 @@
 
 #inner-profile{
     border: 1px red solid;
-    padding: 4vh;
+    padding: 1vh;
     width: 50%;
 }
 
 #container-profile{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     border: 1px blue solid;
-    padding: 10vh;
+    padding: 1vh;
+    gap: 1vh;
+}
+
+#left-profile{
+    border: 1px purple solid;
+    width: 80%;
+    height: 300px;
+}
+#right-profile{
+    border: 1px orange solid;
+    width: 20%;
+    height: 300px;
 }
