@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './header.css';
 
 const Header = () => {
@@ -8,15 +8,24 @@ const Header = () => {
             <div id='header-outer'>
                 <div id='header-inner'>
                     <div id='header-container'>
-                        <Link to='/' className='nav-link'>
-                            lorem
-                        </Link>
-                        <Link to='/about' className='nav-link'>
-                            ipsum
-                        </Link>
-                        <Link to='/contacts' className='nav-link'>
-                            dolor
-                        </Link>
+                        <div id='username-container'>
+                            <img src='src\assets\temp_image.jpg' alt='logo' id='username-logo' />
+                            <span>wacxvizc</span>
+                        </div>
+                        <div id='nav-container'>
+                            <NavLink to='/' end className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                                Home
+                            </NavLink>
+                            <NavLink to='/about' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                                About
+                            </NavLink>
+                            <NavLink to='/experience' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                                Experience
+                            </NavLink>
+                            <NavLink to='/project' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                                Projects
+                            </NavLink>
+                        </div>
                     </div>
                 </div>
             </div>

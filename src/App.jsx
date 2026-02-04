@@ -1,16 +1,16 @@
 import React from 'react'
 import './App.css'
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/header/header.jsx'
 import Footer from './components/footer/footer.jsx'
-import Profile from './pages/profile/profile.jsx'
+import Home from './pages/home/home.jsx'
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Profile />} />
+        <Route path="/" element={<Home />} />
       </Routes>
       <Footer />
     </Router>
