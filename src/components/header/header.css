@@ -10,12 +10,12 @@
     left: 0;
     right: 0;
 }
-/* dito din palitan ng # yung napalitan ng id */
+
 #header-inner{
     border: 1px;
     padding: 1.25rem 2rem;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1800px;
 }
 
 #header-container{
@@ -36,6 +36,7 @@
 
 .nav-link:hover {
     color: #DC2626;
+    border-bottom-color: rgba(220, 38, 38, 0.5);
 }
 
 .nav-link.active {
@@ -68,7 +69,7 @@
 #nav-container {
     display: flex;
     align-items: center;
-    gap: clamp(1rem, 3vw, 2.5rem);
+    gap: clamp(1.5rem, 4vw, 3rem);
 }
 
 /* Tablet */
@@ -78,7 +79,7 @@
     }
     
     #nav-container {
-        gap: 1.5rem;
+        gap: 2rem;
     }
 }
 

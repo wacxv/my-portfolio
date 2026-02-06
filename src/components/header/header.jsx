@@ -16,14 +16,14 @@ const Header = () => {
                             <NavLink to='/' end className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                                 Home
                             </NavLink>
-                            <NavLink to='/about' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-                                About
+                            <NavLink to='/project' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                                Projects
                             </NavLink>
                             <NavLink to='/experience' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                                 Experience
                             </NavLink>
-                            <NavLink to='/project' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-                                Projects
+                            <NavLink to='/contact' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                                Contact
                             </NavLink>
                         </div>
                     </div>
