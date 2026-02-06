@@ -237,3 +237,66 @@
         padding: 0.875rem 1.75rem;
     }
 }
+
+/* Add to your home.css */
+
+/* Name highlight */
+.name-highlight {
+    color: #DC2626;
+}
+
+/* Continuous Tech Animation */
+.tech-highlight-continuous {
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+}
+
+.tech-highlight-continuous span {
+    display: inline-block;
+    position: relative;
+}
+
+/* Social Links (keep your existing social styles) */
+.hero-socials {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #9CA3AF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.social-link svg {
+    font-size: 1.5rem;
+}
+
+.social-link:hover {
+    color: #DC2626;
+    transform: translateY(-3px);
+}
+
+.social-link:focus-visible {
+    outline: 2px solid #DC2626;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    .hero-socials {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+}
