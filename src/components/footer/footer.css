@@ -1,28 +1,25 @@
-#footer-outer{
+#footer-outer {
+    display: flex;
+    justify-content: center;
+    background: #0A0E14;
+    padding: 0;
+    z-index: 100;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    margin-top: 1%;
-    display: flex;
-    justify-content: flex-start;
-    border: 1px;
-    background-color: #000000;
-    padding: 0px;
-    z-index: 100;
 }
 
-#footer-inner{
-    border: 1px;
-    padding: 18px;
+#footer-inner {
+    padding: 0.75rem 2rem; /* Minimal height */
     width: 100%;
+    max-width: 1800px;
 }
 
-#footer-container{
+#footer-container {
     display: flex;
+    align-items: center;
     justify-content: center;
-    border: 1px;
-    padding: 0px;
-    color: #fff;
+    padding: 0;
+    min-height: 20px; /* Just enough to show it exists */
 }

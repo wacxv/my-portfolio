@@ -19,11 +19,11 @@ const Header = () => {
                             <NavLink to='/project' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                                 Projects
                             </NavLink>
+                            <NavLink to='/skill' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                                Skills
+                            </NavLink>
                             <NavLink to='/experience' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                                 Experience
-                            </NavLink>
-                            <NavLink to='/contact' className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-                                Contact
                             </NavLink>
                         </div>
                     </div>
