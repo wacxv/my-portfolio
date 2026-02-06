@@ -2,7 +2,7 @@ import React from "react";
 import "./home.css";
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from 'react-icons/fa';
 
 // Continuous Wave Animation Component
 const AnimatedTechContinuous = ({ text, baseDelay = 0 }) => {
@@ -197,6 +197,7 @@ const Profile = () => {
             >
               <Link to="/project" id="view-all-link">
                 View All Projects
+                <FaArrowRight />
               </Link>
             </motion.div>
           </div>

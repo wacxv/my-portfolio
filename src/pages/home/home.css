@@ -160,17 +160,17 @@
     position: relative;
 }
 
-#view-all-link::after {
-    content: '→';
+#view-all-link svg {
     transition: transform 0.3s ease;
+    font-size: 1rem;
 }
 
 #view-all-link:hover {
-    color: #FFFFFF;
-    background-color: rgba(220, 38, 38, 0.1);
+    color: #DC2626;
+    background-color: rgba(220, 38, 38, 0.08);
 }
 
-#view-all-link:hover::after {
+#view-all-link:hover svg {
     transform: translateX(4px);
 }
 
