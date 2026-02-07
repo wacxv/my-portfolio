@@ -3,6 +3,9 @@ import "./home.css";
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight } from 'react-icons/fa';
+import TaskEval1 from '../../assets/img-project-temp/TaskEval/TaskEval1.png';
+import HavenBloom2 from '../../assets/img-project-temp/HavenBloom/HavenBloom2.png';
+import AWSCalcu1 from '../../assets/img-project-temp/AWSCalcu/AWSCalcu1.png';
 
 // Continuous Wave Animation Component
 const AnimatedTechContinuous = ({ text, baseDelay = 0 }) => {
@@ -170,7 +173,13 @@ const Profile = () => {
                 variants={projectCard}
                 whileHover={{ y: -10 }}
                 transition={{ duration: 0.3 }}
-              ></motion.div>
+              >
+                <img src={TaskEval1} alt="TaskEval Project" />
+                <div className="project-info" aria-hidden="true">
+                  <h3>Task Evaluator</h3>
+                  <p>A .NET 9 + PostgreSQL task API evaluator for assessing CRUD, auth, and EF Core usage.</p>
+                </div>
+              </motion.div>
               
               <motion.div 
                 className="project-card" 
@@ -178,7 +187,13 @@ const Profile = () => {
                 variants={projectCard}
                 whileHover={{ y: -10 }}
                 transition={{ duration: 0.3 }}
-              ></motion.div>
+              >
+                <img src={HavenBloom2} alt="HavenBloom Project" />
+                <div className="project-info" aria-hidden="true">
+                  <h3>HavenBloom</h3>
+                  <p>A Telehealth platform for maternal health with real-time video consultations and IoT device monitoring.</p>
+                </div>
+              </motion.div>
               
               <motion.div 
                 className="project-card" 
@@ -186,7 +201,13 @@ const Profile = () => {
                 variants={projectCard}
                 whileHover={{ y: -10 }}
                 transition={{ duration: 0.3 }}
-              ></motion.div>
+              >
+                <img src={AWSCalcu1} alt="AWSCalcu Project" />
+                <div className="project-info" aria-hidden="true">
+                  <h3>AWS Calculator</h3>
+                  <p>Angular-based AWS pricing calculator with auth, cost modeling, and collection management, built for AWS CloudFront deployment.</p>
+                </div>
+              </motion.div>
             </motion.div>
             
             <motion.div
