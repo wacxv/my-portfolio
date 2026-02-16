@@ -1,0 +1,344 @@
+#project-detail-outer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    margin-top: 100px;
+    min-height: calc(100vh - 100px);
+    background-color: #0A0E14;
+}
+
+#project-detail-inner {
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #9CA3AF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    color: #DC2626;
+    transform: translateX(-4px);
+}
+
+.back-button svg {
+    font-size: 1.25rem;
+}
+
+/* Project Header */
+.project-detail-header {
+    margin-bottom: 3rem;
+}
+
+.project-detail-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: #FFFFFF;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.project-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.project-date,
+.project-category {
+    font-size: 1rem;
+    color: #9CA3AF;
+    padding: 0.5rem 1rem;
+    background-color: rgba(45, 51, 72, 0.5);
+    border-radius: 6px;
+}
+
+.project-category {
+    color: #DC2626;
+    background-color: rgba(220, 38, 38, 0.1);
+    border: 1px solid rgba(220, 38, 38, 0.3);
+}
+
+/* Project Links */
+.project-links-header {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1.75rem;
+    background-color: transparent;
+    color: #9CA3AF;
+    border: 2px solid #2D3348;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-link-btn:hover {
+    border-color: #DC2626;
+    color: #DC2626;
+    background-color: rgba(220, 38, 38, 0.05);
+    transform: translateY(-2px);
+}
+
+.project-link-btn.primary {
+    background-color: #DC2626;
+    border-color: #DC2626;
+    color: #FFFFFF;
+}
+
+.project-link-btn.primary:hover {
+    background-color: #B91C1C;
+    border-color: #B91C1C;
+    color: #FFFFFF;
+}
+
+/* Image Slider */
+.project-slider {
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #1A1F2E;
+    border: 2px solid #2D3348;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.slider-image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(220, 38, 38, 0.9);
+    color: #FFFFFF;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.slider-btn:hover {
+    background-color: #DC2626;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.slider-btn.prev {
+    left: 1.5rem;
+}
+
+.slider-btn.next {
+    right: 1.5rem;
+}
+
+/* Slider Dots */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #2D3348;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.dot:hover {
+    background-color: #DC2626;
+}
+
+.dot.active {
+    background-color: #DC2626;
+    width: 32px;
+    border-radius: 6px;
+}
+
+/* Image Counter */
+.image-counter {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgba(10, 14, 20, 0.9);
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+/* Project Content */
+.project-content-grid {
+    display: grid;
+    gap: 3rem;
+}
+
+.project-section {
+    background-color: #1A1F2E;
+    border: 2px solid #2D3348;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    color: #FFFFFF;
+    margin: 0 0 1.5rem 0;
+    font-weight: 600;
+}
+
+.project-full-description {
+    font-size: 1.125rem;
+    color: #9CA3AF;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Tech Stack Grid */
+.tech-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background-color: rgba(220, 38, 38, 0.05);
+    border: 1px solid rgba(220, 38, 38, 0.2);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+    background-color: rgba(220, 38, 38, 0.1);
+    border-color: rgba(220, 38, 38, 0.4);
+    transform: translateY(-2px);
+}
+
+.tech-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DC2626;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.tech-name {
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #project-detail-inner {
+        padding: 1.5rem;
+    }
+
+    .project-detail-header {
+        margin-bottom: 2rem;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .slider-btn.prev {
+        left: 0.75rem;
+    }
+
+    .slider-btn.next {
+        right: 0.75rem;
+    }
+
+    .tech-stack-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .project-section {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #project-detail-outer {
+        margin-top: 120px;
+        padding: 1rem 0.5rem;
+    }
+
+    #project-detail-inner {
+        padding: 1rem;
+    }
+
+    .back-button {
+        margin-bottom: 2rem;
+    }
+
+    .project-links-header {
+        flex-direction: column;
+    }
+
+    .project-link-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
